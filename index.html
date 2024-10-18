@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мій рідний край - Чернівці</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    
+</head>
+<body>
+    <header>
+        <h1 class="text-center mt-5">Мій рідний край - Чернівці</h1>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <a class="navbar-brand" href="#">Меню</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Головна</a></li>
+                    <li class="nav-item"><a class="nav-link" href="history.html">Історія</a></li>
+                    <li class="nav-item"><a class="nav-link" href="interesting.html">Цікаві місця</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Опитувальник.html">Опитувальник</a></li>
+					<li class="nav-item"><a class="nav-link" href="Реєстрація.html">Реєстрація</a></li>
+                </ul>
+                <button class="btn btn-primary btn-signin" data-bs-toggle="modal" data-bs-target="#loginModal">Sign in</button>
+            </div>
+        </nav>
+    </header>
+
+    <section id="welcome" class="container mt-5">
+        <h3 align = center>Ласкаво просимо до Чернівців!</h3>
+        <blockquote>
+             <p>«Чернівці – це місто, де недільний день починався з Шуберта, а закінчувався дуеллю. 
+            Це місто – на півдорозі між Києвом та Бухарестом, між Краковом і Одесою – було негласною столицею Європи, де співали кращі колоратурні сопрано, де тротуари підмітали букетами троянд і де книгарень було більше, ніж кав’ярень. 
+            Чернівці – це був корабель задоволень з українською командою, німецькими офіцерами і єврейськими пасажирами на борту, який під австрійським прапором постійно тримав курс між Заходом і Сходом»</p>
+            <cite>Георг Гайнцен</cite>
+        </blockquote>
+        <img src="images/298471402.jpg" alt="Чернівці" class="img-fluid">
+    </section>
+    <section id="feedback" class="container mt-5">
+        <h2 class="text-center">Зворотний зв'язок</h2>
+        <form>
+            <div class="form-group">
+                <label for="userFeedback">Ваш відгук</label>
+                <textarea class="form-control" id="userFeedback" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary mt-2">Надіслати</button>
+        </form>
+
+        <h3 class="text-center mt-5">Відгуки користувачів</h3>
+        <div class="feedback-item">
+            <p><strong>Олена:</strong> Чудове місце для відпочинку! Рекомендую всім!</p>
+        </div>
+        <div class="feedback-item">
+            <p><strong>Іван:</strong> Мені сподобалася історія Чернівців!</p>
+        </div>
+        <div class="feedback-item">
+            <p><strong>Марія:</strong> Прекрасний сайт, дякую за інформацію!</p>
+        </div>
+    </section>
+
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Авторизація</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="username">Ім'я користувача</label>
+                            <input type="text" class="form-control" id="username" required>
+                        </div>
+                        <div class="form-group mt-2">
+                            <label for="password">Пароль</label>
+                            <input type="password" class="form-control" id="password" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary mt-3">Увійти</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button id="scrollTopBtn" class="btn btn-secondary">Вгору</button>
+
+    <footer class="text-center mt-5">
+        <p>&copy; 2024 Мій рідний край - Чернівці.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const scrollTopBtn = document.getElementById('scrollTopBtn');
+        window.onscroll = function() {
+            scrollTopBtn.style.display = window.scrollY > 200 ? 'block' : 'none';
+        };
+        scrollTopBtn.onclick = function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        };
+    </script>
+</body>
+</html>

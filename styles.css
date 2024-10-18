@@ -1,0 +1,250 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    transition: background-color 0.3s ease;
+}
+
+/* Медіа запити */
+@media (max-width: 768px) {
+    .navbar-nav .nav-link {
+        font-size: 1.2rem; /* Збільшити шрифт на малих пристроях */
+    }
+
+    #loginModal {
+        position: fixed;
+        top: 10%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        max-width: 300px;
+        width: 90%;
+    }
+}
+
+/* Анімації */
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Збільшення картки при наведенні */
+}
+
+/* Плавний перехід для кнопки */
+.btn {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+/* Секція відгуків */
+#feedback {
+    padding: 20px;
+    background-color: #e9ecef;
+    border-radius: 5px;
+}
+
+.feedback-item {
+    margin-bottom: 10px;
+}
+
+/* Адаптивне меню */
+.navbar-toggler {
+    border-color: #0056b3;
+}
+
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Центрує текст всередині секцій */
+    margin: 0;
+    padding: 20px;
+    
+}
+
+header, section, footer {
+    width: 100%; /* Заповнює ширину батьківського елемента */
+    max-width: 1350px; /* Максимальна ширина для контенту */
+    margin: 20px 0; /* Відступи між секціями */
+    padding: 20px; /* Внутрішні відступи */
+    border-radius: 8px; /* Закруглені краї */
+}
+
+h1, h2, h3 {
+    color: #343a40; /* Темний колір тексту */
+}
+
+blockquote {
+    margin: 20px 0;
+    padding: 15px;
+    border-left: 5px solid #007bff; /* Синя смужка зліва */
+}
+
+.card {
+    margin: 10px 0;
+    padding: 15px;
+}
+
+.feedback-item {
+    margin: 10px 0; /* Відступи між відгуками */
+    padding: 10px;
+}
+   
+
+/* Центрування контенту на головній сторінці */
+#main-content {
+    min-height: 80vh; /* Задайте висоту вікна, щоб контент був по центру */
+}
+#welcome, #overview {
+    max-width: 1350px; /* Задайте максимальну ширину секцій */
+    width: 100%;
+    text-align: center; /* Центрування тексту */
+    margin-bottom: 15px; /* Відстань між секціями */
+}
+
+body {
+    padding-top: 56px;
+}
+
+/* Стиль для кнопки Sign in на малих пристроях */
+@media (max-width: 576px) {
+    .btn-signin {
+        position: fixed; /* Нерухома позиція */
+        bottom: 20px; /* Відстань віднизу */
+        right: 20px; /* Відстань від правого краю */
+        z-index: 1000; /* Високий z-index для відображення над іншими елементами */
+    }
+}
+
+/* Базові стилі */
+body {
+    font-family: Arial, sans-serif;
+}
+header {
+    margin-bottom: 80px;
+}
+h1, h2 {
+    animation: fadeIn 2s ease-in-out;
+}
+@keyframes fadeIn {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+ .feedback-item {
+	margin-bottom: 15px;
+	padding: 10px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	background-color: #f9f9f9;
+}
+#scrollTopBtn {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 1000;
+}
+/* Медіа-запити */
+@media (max-width: 576px) {
+ .btn-signin {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+  }
+}
+/* Базові стилі */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Стили для заголовків */
+header h1 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2.5rem;
+    color: #4a4a8a;
+}
+
+/* Стилі для секцій */
+section {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Стилі абзаців */
+section p {
+    text-align: justify;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Стилі для зображень */
+img {
+    border-radius: 8px;
+    margin: 15px 0;
+}
+
+ .leftimg {
+    float: left;
+    margin-right: 20px;
+}
+
+ .rightimg {
+    float: right;
+    margin-left: 20px;
+}
+
+/* Вирівнювання секційних заголовків */
+h2 {
+    color: #6c757d;
+    font-size: 2rem;
+    margin-top: 30px;
+    text-align: center;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+}
+
+/* Очистка флоутів */
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Адаптивність для мобільних пристроїв */
+@media (max-width: 768px) {
+    .leftimg, .rightimg {
+        float: none;
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        height: auto;
+}
+
+section {
+    padding: 10px;
+  }
+
+h1 {
+    font-size: 2rem;
+   }
+
+h2 {
+    font-size: 1.5rem;
+   }
+}
